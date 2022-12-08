@@ -1,9 +1,16 @@
 <script lang="ts">
+	import { createEventDispatcher } from 'svelte'
 	import { Menu2Fill, SearchLine, NotificationFill, SettingsFill } from 'svelte-remixicon'
+
+	const dispatch = createEventDispatcher<{ toggleSidebar: boolean }>()
+
+	const toggleSidebar = () => {
+		dispatch('toggleSidebar')
+	}
 </script>
 
 <nav class="navbar">
-	<button class="sidebar_btn icon_btn">
+	<button class="sidebar_btn icon_btn" on:click={toggleSidebar}>
 		<Menu2Fill />
 	</button>
 	<div class="navbar_left">
@@ -47,6 +54,12 @@
 		display: flex;
 		align-items: center;
 		gap: 0.75rem;
+		width: 100%;
+
+		@media (min-width: 1200px) {
+			width: calc(100% - var(--sidebar-w));
+			margin-left: auto;
+		}
 
 		.icon_btn {
 			position: relative;
@@ -114,7 +127,7 @@
 			.input_container {
 				position: relative;
 				width: 100%;
-				max-width: 250px;
+				max-width: 400px;
 
 				.input {
 					width: 100%;

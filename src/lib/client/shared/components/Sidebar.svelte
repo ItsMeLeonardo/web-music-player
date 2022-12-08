@@ -14,9 +14,11 @@
 		PlayCircleFill,
 		SignalTowerLine
 	} from 'svelte-remixicon'
+
+	export let open = false
 </script>
 
-<section class="sidebar">
+<section class="sidebar" class:open>
 	<a href="/" class="logo">
 		<PulseLine />
 		<span class="text">Groovvy</span>
@@ -157,7 +159,7 @@
 		position: fixed;
 		top: var(--navbar-h);
 		border-radius: 0 1rem 1rem 0;
-		left: 0;
+		left: calc(-1 * var(--sidebar-w));
 		min-height: calc(100vh - var(--navbar-h));
 		height: 100%;
 		bottom: 0;
@@ -165,11 +167,17 @@
 		background: linear-gradient(180deg, var(--dark) 0%, var(--bg) 100%);
 		padding: 1rem 0.5rem 2rem 1.5rem;
 		overflow: auto;
+		transition: left 0.3s ease-in-out;
+
+		&.open {
+			left: 0;
+		}
 
 		@media (min-width: 1200px) {
 			border-radius: 0;
 			height: 100vh;
 			top: 0;
+			left: 0;
 		}
 
 		.body {
@@ -247,6 +255,7 @@
 		}
 
 		.footer {
+			padding-right: 1rem;
 			.other_devices {
 				display: grid;
 				grid-template-rows: 1fr 0.35fr;

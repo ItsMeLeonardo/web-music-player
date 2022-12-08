@@ -1,7 +1,26 @@
 <script lang="ts">
-	// import Navbar from '$components/Navbar.svelte'
-
+	import Navbar from '$client/shared/components/Navbar.svelte'
+	import Sidebar from '$client/shared/components/Sidebar.svelte'
 	import '../app.postcss'
+
+	let openSidebar = false
+
+	const toggleSidebar = () => {
+		openSidebar = !openSidebar
+	}
 </script>
 
-<slot><!-- optional fallback --></slot>
+<Navbar on:toggleSidebar={toggleSidebar} />
+<Sidebar open={openSidebar} />
+<div class="content">
+	<slot><!-- optional fallback --></slot>
+</div>
+
+<style lang="postcss">
+	.content {
+		padding: 0.5rem;
+		@media (min-width: 1200px) {
+			margin-left: var(--sidebar-w);
+		}
+	}
+</style>
