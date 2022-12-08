@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;900&display=swap');
+
+@import './style/reset.css';
+@import './style/theme.css';
+/* ========== CUSTOM RESET ========== */
+*,
+::after,
+::before {
+	font-family: 'montserrat', sans-serif;
+	box-sizing: border-box;
+	color: var(--text);
+}
+
+body {
+	max-width: 100vw;
+	overflow-x: hidden;
+	height: 100vh;
+	margin: 0;
+	padding: 0;
+	background: var(--bg);
+}
+a {
+	text-decoration: none;
+	color: inherit;
+}
+
+li {
+	list-style: none;
+}
+
+.container {
+	width: 100%;
+	height: 100%;
+	margin: 0 auto;
+	position: relative;
+}
+
+*:focus {
+	outline: 2px solid var(--primary);
+	outline-offset: 2px;
+}
+
+body {
+	background-color: var(--bg);
+}
+
+button {
+	cursor: pointer;
+	border: none;
+	background-color: transparent;
+}
+
+/* ===== custom scroll ===== */
+*::-webkit-scrollbar {
+	width: 6px;
+	height: 6px;
+	border-radius: 10px;
+}
+
+*::-webkit-scrollbar-track {
+	border-radius: 10px;
+	background: var(--light-25);
+}
+
+*::-webkit-scrollbar-thumb {
+	border-radius: 10px;
+	background: var(--primary);
+	/* border: 3px solid var(--bg); */
+	transition: background 0.2s ease;
+	cursor: pointer;
+}
+
+*::-webkit-scrollbar-thumb:hover {
+	background: var(--primary-light);
+}
