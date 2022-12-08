@@ -19,10 +19,14 @@ specifiers:
   svelte: 3.53.1
   svelte-check: 2.9.2
   svelte-preprocess: 4.10.7
+  svelte-remixicon: ^1.0.1
   tslib: 2.4.1
   typescript: 4.9.3
   vite: 3.2.4
   vitest: 0.25.3
+
+dependencies:
+  svelte-remixicon: 1.0.1
 
 devDependencies:
   '@playwright/test': 1.28.1
@@ -1923,6 +1927,10 @@ packages:
       svelte: 3.53.1
       typescript: 4.9.4
     dev: true
+
+  /svelte-remixicon/1.0.1:
+    resolution: {integrity: sha512-Jago+glcU0j5j+j9ELvl9EVEVIbYWVdxfSdi0nUUr2o9Iz75OdJRD7OSkEBeIl2Tm3n9dT4WS1eTo+2BdMviRw==}
+    dev: false
 
   /svelte/3.53.1:
     resolution: {integrity: sha512-Q4/hHkktZogGhN5iqxqSi9sjEVoe/NbIxX4hXEHoasTxj+TxEQVAq66LnDMdAZxjmsodkoI5F3slqsS68U7FNw==}
