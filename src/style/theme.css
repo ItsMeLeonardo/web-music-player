@@ -72,13 +72,24 @@
 	--current: currentColor;
 
 	/* SASS */
-	--bg-dark: #080809;
+	--bg: #080809;
 	--primary: #192cfd;
-	--dark: #141c52;
+	--dark: #19171c;
 	--secondary: #234da3;
 	--text: #d7d1cf;
+	--text-pale: rgba(215, 209, 207, 0.25);
+	--text-gray: #9a9aa1;
 
 	--tertiary: #c88b85;
 	--contrast: #5b4040;
 	--danger: #c52e1d;
+}
+
+button {
+	cursor: pointer;
+	transition: transform 0.2s ease-in-out;
+}
+
+button:active {
+	transform: scale(0.95);
 }
