@@ -73,12 +73,12 @@
 
 	/* SASS */
 	--bg: #080809;
-	--primary: #192cfd;
+	--primary: #5873ff;
 	--dark: #212026;
 	--secondary: #234da3;
-	--text: #d7d1cf;
+	--text-gray: #d7d1cf;
 	--text-pale: rgba(215, 209, 207, 0.25);
-	--text-gray: #9a9aa1;
+	--text: #ffffff;
 
 	--tertiary: #c88b85;
 	--contrast: #5b4040;
