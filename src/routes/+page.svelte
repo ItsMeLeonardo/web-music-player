@@ -7,6 +7,10 @@
 
 <TrendingHero animated />
 
+<svelte:head>
+	<title>Home</title>
+</svelte:head>
+
 <div class="content">
 	<div class="left">
 		<FeedGrid />
