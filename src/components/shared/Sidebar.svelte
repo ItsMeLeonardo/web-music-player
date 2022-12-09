@@ -157,6 +157,7 @@
 <style lang="postcss">
 	.sidebar {
 		position: fixed;
+		z-index: var(--sidebar-z);
 		top: var(--navbar-h);
 		border-radius: 0 1rem 1rem 0;
 		left: calc(-1 * var(--sidebar-w));

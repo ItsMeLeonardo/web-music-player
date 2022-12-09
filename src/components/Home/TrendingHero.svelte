@@ -48,7 +48,7 @@
 
 		&.animated::after {
 			content: '';
-			position: absolute;
+			position: fixed;
 			top: 0;
 			right: 0;
 
@@ -87,7 +87,7 @@
 
 		&.animated::before {
 			content: '';
-			position: absolute;
+			position: fixed;
 			top: 0;
 			right: 4rem;
 
@@ -118,7 +118,7 @@
 			.title {
 				margin: 2rem 0 0.25rem 0;
 				font-size: 4rem;
-				font-weight: black;
+				font-weight: 900;
 			}
 			.details {
 				.artist {

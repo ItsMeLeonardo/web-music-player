@@ -19,6 +19,7 @@
 
 <style lang="postcss">
 	.content {
+		max-width: 1440px;
 		@media (min-width: 1200px) {
 			padding: 1rem;
 			margin-left: var(--sidebar-w);
