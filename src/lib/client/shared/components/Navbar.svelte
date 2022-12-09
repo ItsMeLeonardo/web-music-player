@@ -59,6 +59,7 @@
 		@media (min-width: 1200px) {
 			width: calc(100% - var(--sidebar-w));
 			margin-left: auto;
+			padding: 1rem;
 		}
 
 		.icon_btn {
@@ -101,11 +102,12 @@
 
 			@media (min-width: 768px) {
 				display: flex;
+				gap: 2rem;
 			}
 
 			.nav_item {
-				padding: 0.5rem 1rem;
-				color: var(--text);
+				/* padding: 0.5rem 1rem; */
+				color: var(--text-gray);
 				font-weight: 500;
 				font-size: 14px;
 				text-transform: uppercase;
