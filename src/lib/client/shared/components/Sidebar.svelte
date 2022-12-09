@@ -207,7 +207,6 @@
 				.item {
 					position: relative;
 					width: 100%;
-					color: white;
 
 					&.active:after {
 						content: '';
