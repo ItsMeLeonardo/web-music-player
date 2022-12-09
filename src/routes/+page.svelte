@@ -1,4 +1,5 @@
-<script lang="ts">
+<script>
+	import TrendingHero from '$client/shared/Home/TrendingHero.svelte'
 </script>
 
-<h1>Content</h1>
+<TrendingHero />
