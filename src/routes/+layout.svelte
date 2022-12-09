@@ -18,8 +18,8 @@
 
 <style lang="postcss">
 	.content {
-		padding: 0.5rem;
 		@media (min-width: 1200px) {
+			padding: 1rem;
 			margin-left: var(--sidebar-w);
 		}
 	}
