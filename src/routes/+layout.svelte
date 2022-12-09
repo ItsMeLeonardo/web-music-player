@@ -1,6 +1,7 @@
 <script lang="ts">
-	import Navbar from '$client/shared/components/Navbar.svelte'
-	import Sidebar from '$client/shared/components/Sidebar.svelte'
+	import Navbar from '$components/shared/Navbar.svelte'
+	import Sidebar from '$components/shared/Sidebar.svelte'
+
 	import '../app.postcss'
 
 	let openSidebar = false

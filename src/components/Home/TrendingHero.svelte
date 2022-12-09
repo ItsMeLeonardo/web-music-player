@@ -1,5 +1,5 @@
 <script lang="ts">
-	import Button from '$client/shared/components/Button.svelte'
+	import Button from '$components/shared/Button.svelte'
 	import { HeartFill } from 'svelte-remixicon'
 
 	export let animated = false
